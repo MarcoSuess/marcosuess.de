@@ -1,1 +1,19 @@
-<p>skills-section works!</p>
+<h2>My Skills</h2>
+
+<div class="container-box">
+
+    <div *ngFor="let skill of skills"   class="skill-container">
+    
+        <div class="circle">
+            <img src="{{skill.img}}">
+        </div>
+    
+        <span>
+            {{skill.name}}
+        </span>
+    
+    </div>
+
+</div>
+
+

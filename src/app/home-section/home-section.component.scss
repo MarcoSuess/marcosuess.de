@@ -7,9 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  object-fit: cover;
 
+  object-fit: cover;
+}
+.bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
 }
