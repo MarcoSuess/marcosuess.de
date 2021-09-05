@@ -4,10 +4,15 @@
     margin: 0 auto;
 }
 
-.wrap {
+.skill-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     
+}
+.work-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }

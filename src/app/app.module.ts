@@ -10,6 +10,7 @@ import { HomeTextComponent } from './home-text/home-text.component';
 import { HomeImageComponent } from './home-image/home-image.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
+import { WorkSectionComponent } from './work-section/work-section.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
     HomeTextComponent,
     HomeImageComponent,
     HomeContactComponent,
-    SkillsSectionComponent
+    SkillsSectionComponent,
+    WorkSectionComponent
   ],
   imports: [
     BrowserModule,

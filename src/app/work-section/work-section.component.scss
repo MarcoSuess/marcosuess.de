@@ -1,0 +1,28 @@
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.link-box {
+  border: 2px solid #fa2759;
+  box-sizing: border-box;
+  width: 128px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: #fa2759;
+  }
+
+}
