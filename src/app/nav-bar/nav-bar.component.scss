@@ -18,5 +18,12 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+
+
+    &:last-child  {
+      margin-right: 0;
+    }
   }
+
+
 }
