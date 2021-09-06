@@ -12,6 +12,7 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutSectionComponent } from './about-section/about-section.component';
     HomeContactComponent,
     SkillsSectionComponent,
     WorkSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
