@@ -1,0 +1,59 @@
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  color: #2efcd8;
+  margin-bottom: 16px;
+}
+.mail {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1ea68f;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #f2f2f2;
+    margin-bottom: 12px;
+  }
+
+  input {
+    background: #1a1a1a;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #989898;
+    padding: 16px;
+    border: none;
+    margin-bottom: 16px;
+  }
+
+  textarea {
+    background: #1a1a1a;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #989898;
+    padding: 16px;
+    border: none;
+    margin-bottom: 16px;
+  }
+}
