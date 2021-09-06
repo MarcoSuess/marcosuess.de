@@ -6,16 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-section.component.scss'],
 })
 export class WorkSectionComponent implements OnInit {
+
+
   projects = [
     {
       name: 'Ring of Fire',
       description: 'test',
       category: 'Angular',
+      showDescription: false
     },
     {
       name: 'Sharkie',
       description: 'tesafdf',
       category: 'Java Script',
+      showDescription: false
+    },
+    {
+      name: 'Join',
+      description: 'tesafdf',
+      category: 'Java Script',
+      showDescription: false
+    },
+    {
+      name: 'Lieferando',
+      description: 'tesafdf',
+      category: 'Java Script',
+      showDescription: false
     },
   ];
 

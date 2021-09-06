@@ -21,16 +21,77 @@ h2 {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
+  margin-right: 8px;
 
   &:hover {
     background: #fa2759;
   }
-
-  
 }
-
 
 .active {
   background: #fa2759;
+}
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.preview-box {
+  height: 350px;
+  width: 450px;
+  margin: 16px 16px;
+  background-size: cover;
+  background-position: center;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: rgba(245, 245, 245, 0.9);
+
+  h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #fa2759;
+  }
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  a {
+    background: #ffffff;
+    border: 1px solid #fa2759;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding:  15px 46px;
+    color: #fb426e;
+    text-decoration: none;
+  }
 }
