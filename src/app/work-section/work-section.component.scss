@@ -5,6 +5,7 @@ h2 {
   font-size: 36px;
   line-height: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .link-box {
@@ -24,5 +25,12 @@ h2 {
   &:hover {
     background: #fa2759;
   }
+
+  
+}
+
+
+.active {
+  background: #fa2759;
 
 }

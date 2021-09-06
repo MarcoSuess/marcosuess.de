@@ -1,8 +1,16 @@
 <h2>My Works</h2>
 
 <div>
+  <button
+    [class.active]="title.active"
+    (click)="assort(title.name)"
+    *ngFor="let title of titles; let i = index"
+    class="link-box"
+  >
+    {{ title.name }}
+  </button>
+</div>
 
-    <button  class="link-box">
-        All
-    </button>
+<div *ngFor="let project of showProjects">
+  <h3>{{ project.name }}</h3>
 </div>
