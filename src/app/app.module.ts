@@ -11,6 +11,7 @@ import { HomeImageComponent } from './home-image/home-image.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WorkSectionComponent } from './work-section/work-section.component';
     HomeImageComponent,
     HomeContactComponent,
     SkillsSectionComponent,
-    WorkSectionComponent
+    WorkSectionComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
