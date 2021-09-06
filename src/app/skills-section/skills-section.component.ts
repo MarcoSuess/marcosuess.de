@@ -12,35 +12,35 @@ export class SkillsSectionComponent implements OnInit {
   skills = [
     {
       name: 'JavaScript',
-      img: 'assets/skills_icon/javascript-icon.png',
+      img: 'assets/skills_icons/javascript-icon.png',
     },
     {
       name: 'HTML',
-      img: 'assets/skills_icon/html-icon.png',
+      img: 'assets/skills_icons/html-icon.png',
     },
     {
       name: 'CSS',
-      img: 'assets/skills_icon/css-icon.png',
+      img: 'assets/skills_icons/css-icon.png',
     },
     {
       name: 'Angular',
-      img: 'assets/skills_icon/angular-icon.png',
+      img: 'assets/skills_icons/angular-icon.png',
     },
     {
       name: 'Git',
-      img: 'assets/skills_icon/git-icon.png',
+      img: 'assets/skills_icons/git-icon.png',
     },
     {
       name: 'SCRUM',
-      img: 'assets/skills_icon/scrum-icon.png',
+      img: 'assets/skills_icons/scrum-icon.png',
     },
     {
       name: 'Rest API',
-      img: 'assets/skills_icon/api-icon.png',
+      img: 'assets/skills_icons/api-icon.png',
     },
     {
       name: 'Firebase Database',
-      img: 'assets/skills_icon/database-icon.png',
+      img: 'assets/skills_icons/database-icon.png',
     }
   ];
 

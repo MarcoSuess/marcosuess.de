@@ -12,4 +12,14 @@
       </p>
     </div>
   </div>
+
+  <div class="about-section">
+    <div *ngFor="let story of stories" class="story-box">
+      <img src="{{ story.icon }}" />
+      <h3>{{ story.title }}</h3>
+      <p>
+        {{ story.description }}
+      </p>
+    </div>
+  </div>
 </div>
