@@ -13,6 +13,7 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterSectionComponent } from './footer-section/footer-section.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     SkillsSectionComponent,
     WorkSectionComponent,
     AboutSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    FooterSectionComponent
   ],
   imports: [
     BrowserModule,
