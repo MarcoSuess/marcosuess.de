@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   object-fit: cover;
 }
 .bottom {
@@ -17,4 +16,41 @@
   display: flex;
   justify-content: center;
   bottom: 50px;
+
+  @media screen and (max-width: 800px) {
+    bottom: 80px;
+  }
+
+  @media screen and (max-width: 700px) {
+    bottom: 36px;
+  }
+
+  @media screen and (max-height: 760px) {
+    display: none;
+  }
+
+}
+
+.welcome-container {
+  display: flex;
+  margin-top: 128px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 700px) {
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 80px;
+  }
+}
+
+.description-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @media screen and (max-width: 700px) {
+    align-items: center;
+  }
+  
 }

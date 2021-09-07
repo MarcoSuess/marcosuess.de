@@ -19,11 +19,15 @@ header {
     font-size: 16px;
     line-height: 19px;
 
-
-    &:last-child  {
+    &:last-child {
       margin-right: 0;
     }
+
+  
   }
 
-
+  img {
+    object-fit: cover;
+    cursor: pointer;
+  }
 }

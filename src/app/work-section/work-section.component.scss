@@ -36,12 +36,16 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  width: 70vw;
+
+  @media screen and (max-width: 1250px) {
+    width: 95vw;
+  }
 }
 
 .preview-box {
-  height: 350px;
-  width: 450px;
+  height: 300px;
+  width: 400px;
   margin: 16px 16px;
   background-size: cover;
   background-position: center;
@@ -90,7 +94,7 @@ h2 {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    padding:  15px 46px;
+    padding: 15px 46px;
     color: #fb426e;
     text-decoration: none;
   }

@@ -15,7 +15,7 @@
   <div
     (mouseenter)="project.showDescription = true"
     (mouseleave)="project.showDescription = false"
-    style="background-image: url('assets/marco.jpg')"
+    style="background-image: url({{project.image}})"
     class="preview-box"
     *ngFor="let project of showProjects"
   >

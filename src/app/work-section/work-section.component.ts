@@ -12,24 +12,28 @@ export class WorkSectionComponent implements OnInit {
       description: 'test',
       category: 'Angular',
       showDescription: false,
+      image: 'assets/project-images/ringoffire.png',
     },
     {
       name: 'Sharkie',
       description: 'tesafdf',
       category: 'Java Script',
       showDescription: false,
+      image: 'assets/project-images/sharkie.png',
     },
     {
       name: 'Join',
       description: 'tesafdf',
       category: 'Java Script',
       showDescription: false,
+      image: 'assets/project-images/kanban.jpg',
     },
     {
       name: 'Lieferando',
       description: 'tesafdf',
       category: 'Java Script',
       showDescription: false,
+      image: 'assets/project-images/lieferando.jpg',
     },
   ];
 
