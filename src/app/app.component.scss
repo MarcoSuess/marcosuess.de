@@ -30,12 +30,24 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+    padding-top: 20%;
+  }
 }
 
 .footer {
-  height: 20vh;
+  height: 10vh;
   background: #ffffff;
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 20%;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 40%;
+  
+  }
+  
 }

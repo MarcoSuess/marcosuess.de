@@ -21,10 +21,17 @@ h2 {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
-  margin-right: 8px;
+
+  &:nth-child(2) {
+    margin: 0px 8px 0px 8px;
+  }
 
   &:hover {
     background: #fa2759;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 30vw;
   }
 }
 
@@ -49,6 +56,11 @@ h2 {
   margin: 16px 16px;
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: 400px) {
+    height: 32vh;
+    width: 90vw;
+  }
 }
 
 .links-container {

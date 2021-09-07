@@ -19,6 +19,12 @@
     object-fit: cover;
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    border: none;
+    padding-bottom: 16px;
+  }
 }
 
 .content {
@@ -35,9 +41,12 @@
     font-size: 36px;
     line-height: 40px;
     color: #ffffff;
+    text-align: center;
   }
 
-  
+  @media screen and (max-width: 700px) {
+    margin-left: 0;
+  }
 }
 
 .about-section {
@@ -45,11 +54,16 @@
   justify-content: center;
   align-items: center;
   padding-top: 64px;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    padding-top: 8px;
+  }
 }
 .story-box {
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
   width: 24vw;
   margin-top: 32px;
 
@@ -57,11 +71,8 @@
     height: 32px;
     width: 32px;
     object-fit: cover;
-    background: #2DFCD8;
+    background: #2dfcd8;
     border-radius: 50%;
     padding: 32px;
-   
   }
-
-
 }

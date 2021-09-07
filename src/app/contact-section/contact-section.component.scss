@@ -5,6 +5,10 @@ h2 {
   font-size: 64px;
   color: #2efcd8;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 700px) {
+    text-align: center;
+  }
 }
 .mail {
   font-family: Inter;
@@ -29,6 +33,10 @@ form {
     line-height: 20px;
     color: #f2f2f2;
     margin-bottom: 12px;
+
+    @media screen and (max-width: 700px) {
+      margin-left: 8px;
+    }
   }
 
   input {
@@ -58,18 +66,24 @@ form {
   }
 }
 
-.send-btn {
-  border: 2px solid #2dfcd8 !important;
-  box-sizing: border-box;
-  width: 150px;
-  height: 56px;
-  position: absolute;
-  right: 0;
-  bottom: -80px;
-  cursor: pointer;
-  font-family: Gilroy-Bold;
-  font-size: 18px;
-  line-height: 14px;
-  text-align: center;
-  color: #2dfcd8 !important;
+
+
+.send-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    border: 2px solid #2dfcd8 ;
+    box-sizing: border-box;
+    width: 150px;
+    height: 56px;
+    right: 0;
+    cursor: pointer;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    color: #2dfcd8 ;
+  }
 }
