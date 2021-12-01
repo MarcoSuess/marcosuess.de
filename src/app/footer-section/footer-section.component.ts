@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogDataProtectionComponent } from '../dialog-data-protection/dialog-data-protection.component';
+import { DialogLegalNoticeComponent } from '../dialog-legal-notice/dialog-legal-notice.component';
 
 @Component({
   selector: 'app-footer-section',
@@ -7,17 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matDialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
   openDialogLegalNotice() {
-
+    this.matDialog.open(DialogLegalNoticeComponent)
   }
 
   openDialogDataProtection() {
-    
+    this.matDialog.open(DialogDataProtectionComponent)
   }
 
 }

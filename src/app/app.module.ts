@@ -20,6 +20,9 @@ import { DialogSubmitReportComponent } from './dialog-submit-report/dialog-submi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import { DialogLegalNoticeComponent } from './dialog-legal-notice/dialog-legal-notice.component';
+import { DialogDataProtectionComponent } from './dialog-data-protection/dialog-data-protection.component';
+
 
 
 @NgModule({
@@ -36,6 +39,9 @@ import {MatButtonModule} from '@angular/material/button';
     ContactSectionComponent,
     FooterSectionComponent,
     DialogSubmitReportComponent,
+    DialogLegalNoticeComponent,
+    DialogDataProtectionComponent,
+  
   
   
     

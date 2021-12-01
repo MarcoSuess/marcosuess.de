@@ -1,7 +1,3 @@
-::ng-deep.mat-dialog-container {
-  background: white;
-  color: black;
-}
 
 .report-container {
   display: flex;
@@ -11,6 +7,15 @@
 
  
 }
+
+
+::ng-deep.mat-dialog-container {
+  background: white;
+  color: black;
+
+ 
+}
+
 
 
 a {

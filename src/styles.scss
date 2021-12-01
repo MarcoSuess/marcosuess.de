@@ -84,3 +84,15 @@ p {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+
+.overflow-container {
+  overflow-y: auto;
+  height: 64vh;
+
+  p {
+    color: black;
+    text-align: start;
+  }
+  
+}

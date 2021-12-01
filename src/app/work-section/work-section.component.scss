@@ -9,6 +9,7 @@ h2 {
 }
 
 .link-box {
+  transition: all 225ms ease-in-out;
   border: 2px solid #fa2759;
   box-sizing: border-box;
   width: 128px;
@@ -70,12 +71,15 @@ h2 {
 }
 
 .description {
+
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  animation: opacity 225ms ease-in-out;
   background: rgba(245, 245, 245, 0.9);
+
 
   h3 {
     font-family: Inter;
@@ -110,4 +114,11 @@ h2 {
     color: #fb426e;
     text-decoration: none;
   }
+}
+
+
+
+@keyframes opacity {
+  from { opacity: 0; }
+  to { opacity: 0.9; }
 }
