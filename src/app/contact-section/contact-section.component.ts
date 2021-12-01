@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ContactService } from '../services/contact.service';
+
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
-  styleUrls: ['./contact-section.component.scss']
+  styleUrls: ['./contact-section.component.scss'],
 })
-export class ContactSectionComponent implements OnInit {
+export class ContactSectionComponent {
+  constructor(public contactService: ContactService) {}
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  
+  
 }

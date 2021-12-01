@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home-section',
   templateUrl: './home-section.component.html',
-  styleUrls: ['./home-section.component.scss']
+  styleUrls: ['./home-section.component.scss'],
 })
 export class HomeSectionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  scrollDown() {
+    document.getElementById('section-Skill')?.scrollIntoView();
   }
-
 }

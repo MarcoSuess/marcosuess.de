@@ -1,0 +1,11 @@
+
+
+<div class="report-container">
+    <h2>{{contactService.submitReport}}</h2>
+    <a *ngIf="contactService.errorMessage" href="mailto:suess_1998@web.de">suess_1998@web.de</a>
+</div>
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="contactService.closeCard()">Close</button>
+</div>

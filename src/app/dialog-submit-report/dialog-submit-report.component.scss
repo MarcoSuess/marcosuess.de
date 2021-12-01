@@ -1,0 +1,26 @@
+::ng-deep.mat-dialog-container {
+  background: white;
+  color: black;
+}
+
+.report-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+
+    &:hover {
+        color: #2efcd8;
+    }
+  }

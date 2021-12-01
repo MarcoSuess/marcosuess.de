@@ -14,6 +14,13 @@ import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DialogSubmitReportComponent } from './dialog-submit-report/dialog-submit-report.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -27,11 +34,20 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     WorkSectionComponent,
     AboutSectionComponent,
     ContactSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    DialogSubmitReportComponent,
+  
+  
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

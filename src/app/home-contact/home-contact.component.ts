@@ -12,4 +12,8 @@ export class HomeContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  scrollToContact() {
+    document.getElementById('section-Contact')?.scrollIntoView();
+  }
 }

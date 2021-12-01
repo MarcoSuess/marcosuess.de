@@ -4,17 +4,34 @@
   <a class="mail" href="mailto:suess_1998@web.de">suess_1998@web.de</a>
 </p>
 
-<form action="">
+<form
+  #myForm="ngForm"
+  (ngSubmit)="contactService.onSubmit(myForm)"
+  ngNativeValidate
+  
+>
   <label for="name">Name</label>
-  <input placeholder="Enter your Name" type="text" />
-
-  <label for="email">Email address</label>
-  <input placeholder="Enter your Email address" type="text" />
-
-  <label for="message">Message</label>
-  <textarea id="message" placeholder="Enter your Message" rows="8"></textarea>
+  <input placeholder="Enter your Name" name="name" ngModel required />
+  <label for="email" name="email">Email address</label>
+  <input
+    placeholder="Enter your Email address"
+    type="email"
+    name="email"
+    ngModel
+    required
+  />
+  <label for="message" name="message">Message</label>
+  <textarea
+    placeholder="Enter your Message"
+    name="message"
+    ngModel
+    rows="8"
+    required
+  ></textarea>
 
   <div class="send-box">
     <input value="Send" type="submit" />
   </div>
+
+
 </form>

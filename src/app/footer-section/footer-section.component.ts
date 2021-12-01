@@ -12,4 +12,12 @@ export class FooterSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openDialogLegalNotice() {
+
+  }
+
+  openDialogDataProtection() {
+    
+  }
+
 }

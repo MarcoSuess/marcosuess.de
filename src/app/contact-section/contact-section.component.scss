@@ -15,7 +15,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  color: #1ea68f;
+  color: #2efcd8;
   text-decoration: none;
 }
 
@@ -73,6 +73,13 @@ form {
   display: flex;
   justify-content: flex-end;
 
+
+  :hover {
+    background-color: #2dfcd8;
+    color: white;
+  }
+
+
   input {
     border: 2px solid #2dfcd8 ;
     box-sizing: border-box;
@@ -86,4 +93,18 @@ form {
     text-align: center;
     color: #2dfcd8 ;
   }
+}
+
+
+.reportBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  button {
+    width: 150px;
+    height: 56px;
+    cursor: pointer;
+  }
+
 }
