@@ -22,7 +22,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { DialogLegalNoticeComponent } from './dialog-legal-notice/dialog-legal-notice.component';
 import { DialogDataProtectionComponent } from './dialog-data-protection/dialog-data-protection.component';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -41,10 +41,6 @@ import { DialogDataProtectionComponent } from './dialog-data-protection/dialog-d
     DialogSubmitReportComponent,
     DialogLegalNoticeComponent,
     DialogDataProtectionComponent,
-  
-  
-  
-    
   ],
   imports: [
     BrowserModule,
@@ -53,7 +49,10 @@ import { DialogDataProtectionComponent } from './dialog-data-protection/dialog-d
     HttpClientModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

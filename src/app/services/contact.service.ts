@@ -8,7 +8,7 @@ import { DialogSubmitReportComponent } from '../dialog-submit-report/dialog-subm
   providedIn: 'root',
 })
 export class ContactService {
-  endpoint = 'app/send_mail.php';
+  endpoint = '/app/send_mail.php';
   submitReport: string = '';
   submitComplete = false;
   public errorMessage: boolean = false;

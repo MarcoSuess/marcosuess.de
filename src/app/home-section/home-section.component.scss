@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  transition: all 225ms ease-in-out;
 
   &:hover {
     background-color: #fa2759;
@@ -24,18 +25,7 @@
   justify-content: center;
   bottom: 50px;
   cursor: pointer;
-
-  @media screen and (max-width: 800px) {
-    bottom: 80px;
-  }
-
-  @media screen and (max-width: 700px) {
-    bottom: 36px;
-  }
-
-  @media screen and (max-height: 760px) {
-    display: none;
-  }
+  
 }
 
 .welcome-container {

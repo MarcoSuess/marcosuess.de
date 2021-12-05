@@ -1,16 +1,29 @@
 <header class="scroll">
-    <h1 style="color: white;">MS</h1>
+  <h1 style="color: white">MS</h1>
 
-    
-    <div class="desk">
-        <a href="#section-Home">HOME</a>
-        <a href="#section-Portfolio">PORTFOLIO</a>
-        <a href="#section-About">ABOUT</a>
+  <div class="desk">
+    <a href="#section-Home">HOME</a>
+    <a href="#section-Portfolio">PORTFOLIO</a>
+    <a href="#section-About">ABOUT</a>
+  </div>
+
+
+  <mat-drawer-container class="example-container mobile" autosize>
+    <mat-drawer  position="end" #drawer class="example-sidenav" mode="push">
+      <h1>test</h1>
+      <h2>test</h2>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <img
+        (click)="drawer.toggle()"
+        src="assets/menu_icon.png"
+      />
     </div>
-
-    <img class="mobile" src="assets/menu_icon.png" >
-
+  </mat-drawer-container>
 
 </header>
+
+
 
 
