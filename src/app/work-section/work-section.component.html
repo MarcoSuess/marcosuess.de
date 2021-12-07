@@ -1,17 +1,6 @@
 
 
 
-<div class="links-container">
-  <h2>My Works</h2>
-  <button
-    [class.active]="title.active"
-    (click)="assort(title.name)"
-    *ngFor="let title of titles; let i = index"
-    class="link-box"
-  >
-    {{ title.name }}
-  </button>
-</div>
 
 <div class="project-container">
   <div
@@ -19,7 +8,7 @@
     (mouseleave)="project.showDescription = false"
     style="background-image: url({{project.image}})"
     class="preview-box"
-    *ngFor="let project of showProjects"
+    *ngFor="let project of projektService.showProjects"
   >
     <div *ngIf="project.showDescription" class="description">
       <h3>{{ project.name }}</h3>

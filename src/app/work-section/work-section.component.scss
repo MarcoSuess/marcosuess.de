@@ -1,51 +1,13 @@
-h2 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 40px;
-  color: #ffffff;
-  text-align: center;
-}
 
-.link-box {
-  transition: all 225ms ease-in-out;
-  border: 2px solid #fa2759;
-  box-sizing: border-box;
-  width: 128px;
-  height: 70px;
-  background-color: black;
-  color: white;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-  cursor: pointer;
 
-  &:nth-child(2) {
-    margin: 0px 8px 0px 8px;
-  }
 
-  &:hover {
-    background: #fa2759;
-  }
-
-  @media screen and (max-width: 450px) {
-    width: 30vw;
-  }
-}
-
-.active {
-  background: #fa2759;
-}
 
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 70vw;
-  height: 64vh;
+
 
   @media screen and (max-width: 1250px) {
     width: 95vw;
@@ -64,11 +26,17 @@ h2 {
     height: 32vh;
     width: 90vw;
   }
+
+  @media screen and (max-width: 920px) {
+    height: 208px;
+    width: 300px;
+  }
+
+
+
+ 
 }
 
-.links-container {
-  margin-bottom: 16px;
-}
 
 .description {
   display: flex;
@@ -122,3 +90,8 @@ h2 {
     opacity: 0.9;
   }
 }
+
+
+
+
+

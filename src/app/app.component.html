@@ -7,8 +7,21 @@
     <app-skills-section></app-skills-section>
   </div>
 
-  <div id="section-Portfolio" class="work-section bg-1 scroll">
-    <app-work-section></app-work-section>
+  <div class="main-project-container scroll">
+    <div class="links-container">
+      <h2>My Works</h2>
+      <button
+        [class.active]="title.active"
+        (click)="projectService.assort(title.name)"
+        *ngFor="let title of projectService.titles; let i = index"
+        class="link-box"
+      >
+        {{ title.name }}
+      </button>
+    </div>
+    <div id="section-Portfolio" class="work-section bg-1">
+      <app-work-section></app-work-section>
+    </div>
   </div>
 
   <div id="section-About" class="column-container bg-2 scroll">
@@ -23,4 +36,3 @@
     <app-footer-section></app-footer-section>
   </div>
 </div>
-
