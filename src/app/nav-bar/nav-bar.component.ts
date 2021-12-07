@@ -8,7 +8,7 @@ import { AnchorScrollService } from '../anchor-scroll.service';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(public anchorScroll: AnchorScrollService) {
+  constructor(public anchorScroll: AnchorScrollService, ) {
    
    }
 
@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
   }
 
   
-
+  
 
 
 }

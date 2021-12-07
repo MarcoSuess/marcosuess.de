@@ -45,9 +45,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   width: 70vw;
+  height: 64vh;
 
   @media screen and (max-width: 1250px) {
     width: 95vw;
+
   }
 }
 
@@ -65,13 +67,10 @@ h2 {
 }
 
 .links-container {
-  display: flex;
-  justify-content: center;
   margin-bottom: 16px;
 }
 
 .description {
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -79,7 +78,6 @@ h2 {
   height: 100%;
   animation: opacity 225ms ease-in-out;
   background: rgba(245, 245, 245, 0.9);
-
 
   h3 {
     font-family: Inter;
@@ -116,9 +114,11 @@ h2 {
   }
 }
 
-
-
 @keyframes opacity {
-  from { opacity: 0; }
-  to { opacity: 0.9; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
 }
