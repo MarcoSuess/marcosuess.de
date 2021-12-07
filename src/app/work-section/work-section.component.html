@@ -1,16 +1,16 @@
 
 
-
+    (mouseenter)="project.showDescription = true"
+    (mouseleave)="project.showDescription = false"
 
 <div class="project-container">
   <div
-    (mouseenter)="project.showDescription = true"
-    (mouseleave)="project.showDescription = false"
+
     style="background-image: url({{project.image}})"
     class="preview-box"
     *ngFor="let project of projektService.showProjects"
   >
-    <div *ngIf="project.showDescription" class="description">
+    <div *ngIf="!project.showDescription" class="description">
       <h3>{{ project.name }}</h3>
       <p>{{ project.description }}</p>
       <a href="">Try out</a>

@@ -24,6 +24,7 @@ header {
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    transition: all 225ms ease-in-out;
 
     &:hover {
       color: #fa2759;
@@ -57,6 +58,7 @@ header {
 mat-list-item {
   color: white !important;
   cursor: pointer;
+  transition: all 225ms ease-in-out;
 
   &:hover {
     color: #fa2759 !important;
