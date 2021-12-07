@@ -2,28 +2,34 @@
   <h1 style="color: white">MS</h1>
 
   <div class="desk">
-    <a href="#section-Home">HOME</a>
-    <a href="#section-Portfolio">PORTFOLIO</a>
-    <a href="#section-About">ABOUT</a>
+    <a (click)="anchorScroll.scrollTo('section-Home')">HOME</a>
+    <a (click)="anchorScroll.scrollTo('section-Portfolio')">PORTFOLIO</a>
+    <a (click)="anchorScroll.scrollTo('section-About')">ABOUT</a>
   </div>
 
-
   <mat-drawer-container class="example-container mobile" autosize>
-    <mat-drawer  position="end" #drawer class="example-sidenav" mode="push">
-      <h1>test</h1>
-      <h2>test</h2>
+    <mat-drawer position="end" #drawer class="example-sidenav" mode="push">
+      <mat-list role="list">
+        <mat-list-item
+          (click)="anchorScroll.scrollTo('section-Home'); drawer.close()"
+          role="listitem"
+          >HOME</mat-list-item
+        >
+        <mat-list-item
+          (click)="anchorScroll.scrollTo('section-Portfolio');  drawer.close()"
+          role="listitem"
+          >PORTFOLIO</mat-list-item
+        >
+        <mat-list-item
+          (click)="anchorScroll.scrollTo('section-About');  drawer.close()"
+          role="listitem"
+          >ABOUT</mat-list-item
+        >
+      </mat-list>
     </mat-drawer>
 
     <div class="example-sidenav-content">
-      <img
-        (click)="drawer.toggle()"
-        src="assets/menu_icon.png"
-      />
+      <img (click)="drawer.toggle()" src="assets/menu_icon.png" />
     </div>
   </mat-drawer-container>
-
 </header>
-
-
-
-

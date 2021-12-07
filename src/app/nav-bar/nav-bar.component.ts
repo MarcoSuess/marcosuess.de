@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnchorScrollService } from '../anchor-scroll.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public anchorScroll: AnchorScrollService) {
+   
+   }
 
   ngOnInit(): void {
   }
+
+  
+
+
 
 }

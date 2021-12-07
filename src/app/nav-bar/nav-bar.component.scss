@@ -11,7 +11,7 @@ header {
   padding-top: 16px;
 
   @media screen and (max-width: 700px) {
-   position: unset !important;
+    position: unset !important;
   }
 
   a {
@@ -23,6 +23,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
 
     &:hover {
       color: #fa2759;
@@ -31,8 +32,6 @@ header {
     &:last-child {
       margin-right: 0;
     }
-
-  
   }
 
   img {
@@ -41,17 +40,25 @@ header {
   }
 }
 
-
-
 ::ng-deep.mat-drawer-container {
- background-color: black;
- position: unset !important;
- 
+  background-color: black;
+  position: unset !important;
 }
-
 
 ::ng-deep.mat-drawer.mat-drawer-end {
   width: 50%;
+}
 
+::ng-deep.mat-drawer-inner-container {
+  background: #131111;
+  text-align: center;
+}
 
+mat-list-item {
+  color: white !important;
+  cursor: pointer;
+
+  &:hover {
+    color: #fa2759 !important;
+  }
 }

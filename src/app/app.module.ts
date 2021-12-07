@@ -23,7 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { DialogLegalNoticeComponent } from './dialog-legal-notice/dialog-legal-notice.component';
 import { DialogDataProtectionComponent } from './dialog-data-protection/dialog-data-protection.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,6 +41,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     DialogSubmitReportComponent,
     DialogLegalNoticeComponent,
     DialogDataProtectionComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -51,6 +52,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatDialogModule,
     MatButtonModule,
     MatSidenavModule,
+    MatListModule,
+    
     
     
   ],

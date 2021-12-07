@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnchorScrollService } from '../anchor-scroll.service';
 
 @Component({
   selector: 'app-home-section',
@@ -6,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-section.component.scss'],
 })
 export class HomeSectionComponent implements OnInit {
-  constructor() {}
+  constructor(public scrollService: AnchorScrollService) {}
 
   ngOnInit(): void {}
 
-  scrollDown() {
-    document.getElementById('section-Skill')?.scrollIntoView();
-  }
+ 
 }
