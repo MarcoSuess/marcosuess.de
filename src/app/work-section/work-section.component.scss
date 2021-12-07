@@ -36,7 +36,7 @@
   }
 
   @media screen and (max-width: 920px) {
-    height: 208px;
+    height: 260px;
     width: 300px;
   }
 
@@ -47,6 +47,7 @@
 
 
 .description {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -56,7 +57,7 @@
   background: rgba(245, 245, 245, 0.9);
 
   h3 {
-    font-family: Inter !important;
+    font: Inter !important;
     font-style: normal !important;
     font-weight: bold !important;
     font-size: 18px !important;
@@ -66,7 +67,7 @@
   }
 
   p {
-    font-family: Inter;
+    font: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -77,16 +78,16 @@
 
   a {
     border-radius: 2px;
-    margin-top: 40px;
+    margin-top: 32px;
     background: #ffffff;
     border: 1px solid #fa2759;
     box-sizing: border-box;
-    font-family: Inter;
+    font: Inter !important;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    padding: 15px 46px;
+    padding: 16px 32px;
     color: #fb426e;
     text-decoration: none;
     transition: all 225ms ease-in-out;
@@ -107,6 +108,18 @@
   }
 }
 
+
+.jsdoc {
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+ 
+ 
+    margin-bottom: 4px;
+    border-radius: 8px 0px 8px !important;
+    padding: 4px 4px !important;
+  
+}
 
 
 

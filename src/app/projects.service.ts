@@ -1,37 +1,38 @@
 import { Injectable, OnInit } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsService {
   projects = [
     {
       name: 'Ring of Fire',
-      description: 'test',
+      description: 'Angular based Card Counting Game',
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/ringoffire.png',
     },
     {
       name: 'Sharkie',
-      description: 'tesafdf',
+      description:
+        'Sharkie is a jump and run browser and android game made with Javascript.',
       category: 'Java Script',
       showDescription: false,
       image: 'assets/project-images/sharkie.png',
     },
     {
-      name: 'Join',
-      description: 'tesafdf',
-      category: 'Java Script',
+      name: 'Wichtel-App',
+      description: 'Angular based Wichtel-App',
+      category: 'Angular',
       showDescription: false,
-      image: 'assets/project-images/kanban.jpg',
+      image: 'assets/project-images/wichtel-app.png',
     },
     {
-      name: 'Lieferando',
-      description: 'tesafdf',
-      category: 'Java Script',
+      name: 'Slack Clone',
+      description: 'Based on Slack with Angular and Firebase',
+      category: 'Angular',
       showDescription: false,
-      image: 'assets/project-images/lieferando.jpg',
+      image: 'assets/project-images/slack-clone.jpg',
     },
   ];
 
@@ -52,12 +53,7 @@ export class ProjectsService {
 
   showProjects: any;
 
-  
-  constructor() { }
-
- 
-
-  
+  constructor() {}
 
   assort(title: string) {
     for (let i = 0; i < this.titles.length; i++) {
@@ -82,9 +78,4 @@ export class ProjectsService {
     }
     console.log(this.showProjects);
   }
-
-
-
-
-
 }
