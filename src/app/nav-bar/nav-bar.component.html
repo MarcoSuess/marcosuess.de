@@ -8,7 +8,15 @@
   </div>
 
   <mat-drawer-container class="example-container mobile" autosize>
-    <mat-drawer position="end" #drawer class="example-sidenav" mode="push">
+    <mat-drawer
+    [ngStyle]="{
+      'display': drawer.opened ? 'block' : 'none'
+    }"
+      position="end"
+      #drawer
+      class="example-sidenav"
+      mode="push"
+    >
       <mat-list role="list">
         <mat-list-item
           (click)="anchorScroll.scrollTo('section-Home'); drawer.close()"
@@ -16,12 +24,12 @@
           >HOME</mat-list-item
         >
         <mat-list-item
-          (click)="anchorScroll.scrollTo('section-Portfolio');  drawer.close()"
+          (click)="anchorScroll.scrollTo('section-Portfolio'); drawer.close()"
           role="listitem"
           >PORTFOLIO</mat-list-item
         >
         <mat-list-item
-          (click)="anchorScroll.scrollTo('section-About');  drawer.close()"
+          (click)="anchorScroll.scrollTo('section-About'); drawer.close()"
           role="listitem"
           >ABOUT</mat-list-item
         >
