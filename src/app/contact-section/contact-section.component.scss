@@ -1,14 +1,14 @@
 h2 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  color: #2efcd8;
-  margin-bottom: 16px;
+  font-family: Inter !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 64px !important;
+  color: #2efcd8 !important;
+  margin-bottom: 16px !important;
 
   @media screen and (max-width: 700px) {
-    text-align: center;
-    font-size: 48px;
+    text-align: center !important;
+    font-size: 48px !important;
   }
 }
 .mail {

@@ -35,13 +35,9 @@
   margin-left: 128px;
 
   h2 {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 40px;
-    color: #ffffff;
-    text-align: center;
+    color: white !important;
+    font-weight: bold !important;
+
   }
 
   @media screen and (max-width: 700px) {
