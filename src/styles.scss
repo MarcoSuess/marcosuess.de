@@ -7,12 +7,12 @@ html {
 body {
   margin: 0 auto;
   background-color: #000000;
-  /*  height: 100%; */
+ 
   overflow-x: hidden !important;
-  /* overflow-y: auto;
+  overflow-y: auto;
   @media screen and (min-width: 700px) {
     overflow: hidden;
-  }  */
+  } 
 }
 
 .primary-color {
@@ -93,10 +93,16 @@ body {
 .overflow-container {
   overflow-y: auto;
   height: 64vh;
+  width: fit-content;
 
   p {
     color: black;
     text-align: start;
+  }
+
+  h2 {
+    font-size: 1.5em !important;
+    line-height: 40px !important;
   }
 }
 

@@ -5,15 +5,13 @@ footer {
   align-items: center;
   margin: 0 auto;
   width: 90%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
+  
   justify-content: space-between;
 
   @media screen and (max-width: 700px) {
     flex-direction: column-reverse;
     justify-content: space-around;
+    height: 100%;
   }
 }
 

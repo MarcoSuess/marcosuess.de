@@ -22,4 +22,10 @@ button {
     margin-top: 16px;
     width: 50vw;
   }
+
+
+  @media screen and (max-height: 720px) {
+    margin-bottom: 32px !important;
+  }
+  
 }

@@ -1,7 +1,11 @@
 .home-section {
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+  }
 }
 
 .skill-section {
@@ -19,9 +23,8 @@
   justify-content: center;
   align-items: center;
   min-height: 64vh;
- 
 
- /*  @media screen and (max-width: 1000px) {
+  /*  @media screen and (max-width: 1000px) {
     
   } */
 }
@@ -50,19 +53,19 @@ app-work-section {
 }
 
 .footer {
-  height: 10vh;
+  height: 160px;
   background: #ffffff;
   display: flex;
   align-items: center;
-  position: relative;
-  margin-top: 20%;
-
-  @media screen and (max-width: 700px) {
-    margin-top: 40%;
-  }
 }
 
+app-footer-section {
+  width: 100%;
 
+  @media screen and (max-width: 700px) {
+   height: 100%; 
+  }
+}
 
 .links-container {
   margin-bottom: 16px;
@@ -77,7 +80,6 @@ app-work-section {
     color: #ffffff;
     text-align: center;
   }
-  
 }
 
 .link-box {
@@ -115,6 +117,6 @@ app-work-section {
 .main-project-container {
   min-height: 100vh;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }

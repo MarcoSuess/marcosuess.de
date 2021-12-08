@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .intro-box {
@@ -12,6 +13,7 @@
   align-items: center;
   border-bottom: 1px solid #2dfcd8;
   padding-bottom: 64px;
+  padding-top: 64px;
 
   img {
     height: 250px;
@@ -35,6 +37,7 @@
   margin-left: 128px;
 
   h2 {
+    margin-bottom: 0;
     color: white !important;
     font-weight: bold !important;
 
@@ -42,25 +45,47 @@
 
   @media screen and (max-width: 700px) {
     margin-left: 0;
+
+    p, h2 {
+      width: 80vw !important;
+    }
+
+    h2 {
+      text-align: center;
+    }
   }
 }
 
 .about-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 64px;
+  
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
+    align-items: center;
+
+
+    p {
+      width: 80vw !important;
+    }
+  }
+
+  p {
+    width: 88%;
+  }
+
+
+  h3 {
     padding-top: 8px;
+    font-weight: bold;
   }
 }
 .story-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 24vw;
+  width: 25%;
   margin-top: 32px;
 
   img {
@@ -71,4 +96,9 @@
     border-radius: 50%;
     padding: 32px;
   }
+}
+
+
+p {
+  font-size: 1.2em !important;
 }
