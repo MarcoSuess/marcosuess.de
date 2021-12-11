@@ -11,6 +11,8 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/ringoffire.png',
+      jsDocUrl: 'marcosuess.net/compodoc/ringoffire-doc/index.html',
+      projectUrl: 'https://ring-of-fire-44c7a.web.app'
     },
     {
       name: 'Sharkie',
@@ -19,6 +21,8 @@ export class ProjectsService {
       category: 'Java Script',
       showDescription: false,
       image: 'assets/project-images/sharkie.png',
+      jsDocUrl: 'http://marcosuess.net/Sharkie/out/',
+      projectUrl: 'http://marcosuess.net/Sharkie/'
     },
     {
       name: 'Wichtel-App',
@@ -26,6 +30,8 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/wichtel-app.png',
+      jsDocUrl: 'marcosuess.net/compodoc/wichtelapp-doc/index.html',
+      projectUrl: 'https://wichteln-acefa.web.app/sign-in'
     },
     {
       name: 'Slack Clone',
@@ -33,6 +39,8 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/slack-clone.jpg',
+      jsDocUrl: 'marcosuess.net/compodoc/slack-doc/index.html',
+      projectUrl: 'https://slack-55c68.web.app/sign-in'
     },
   ];
 
