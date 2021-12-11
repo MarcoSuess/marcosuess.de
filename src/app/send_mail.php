@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'suess_1998@web.de';
-/* $redirect = 'index.html'; */
+//$redirect = 'index.html';
 
 ########### CONFIG END ###########
 
@@ -14,10 +14,12 @@ $recipient = 'suess_1998@web.de';
 #   This script has been created to send an email to the $recipient
 #   
 #  1) Upload this file to your FTP Server
-#  2) Send a POST rewquest to this file, including
+#  2) Send a POST rewquest to this file, including params like
 #     [name] The name of the sender (Absender)
 #     [message] Message that should be send to you
-#w
+#     [email] ...
+#     [subject] ...
+#
 ##################################
 
 
@@ -39,14 +41,31 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
         header("Access-Control-Allow-Origin: *");
 
-        $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $json = file_get_contents('php://input');
 
-        mail($recipient, $subject, $_POST['message'], $headers);
-        header("Location: " . $redirect); 
+        $params = json_decode($json);
+
+        mb_internal_encoding("UTF-8"); 
+
+        $name = $params->name;
+        $email = $params->email;
+        $subject = $params->subject;
+        $message = $params->message;
+
+        $name = mb_encode_mimeheader($name,'UTF-8','Q');
+        /* $email = mb_encode_mimeheader($email,'UTF-8','Q'); */
+        $subject = mb_encode_mimeheader($subject,'UTF-8','Q');
+        /* $message = mb_encode_mimeheader($message,'UTF-8','Q'); */
+        
+        $headers .= "From: $name <$email>";
+
+        mail($recipient, $subject, $message, $headers);
+        //header("Location: " . $redirect); 
 
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);
         exit;
 }
+
+?>

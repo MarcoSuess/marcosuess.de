@@ -11,7 +11,7 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/ringoffire.png',
-      jsDocUrl: 'marcosuess.net/compodoc/ringoffire-doc/index.html',
+      jsDocUrl: 'compodoc/ringoffire-doc/index.html',
       projectUrl: 'https://ring-of-fire-44c7a.web.app'
     },
     {
@@ -30,7 +30,7 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/wichtel-app.png',
-      jsDocUrl: 'marcosuess.net/compodoc/wichtelapp-doc/index.html',
+      jsDocUrl: 'compodoc/wichtelapp-doc/index.html',
       projectUrl: 'https://wichteln-acefa.web.app/sign-in'
     },
     {
@@ -39,7 +39,7 @@ export class ProjectsService {
       category: 'Angular',
       showDescription: false,
       image: 'assets/project-images/slack-clone.jpg',
-      jsDocUrl: 'marcosuess.net/compodoc/slack-doc/index.html',
+      jsDocUrl: 'compodoc/slack-doc/index.html',
       projectUrl: 'https://slack-55c68.web.app/sign-in'
     },
   ];

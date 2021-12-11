@@ -8,7 +8,7 @@ import { DialogSubmitReportComponent } from '../dialog-submit-report/dialog-subm
   providedIn: 'root',
 })
 export class ContactService {
-  endpoint = '/app/send_mail.php';
+  endpoint = './send_mail.php';
   submitReport: string = '';
   submitComplete = false;
   public errorMessage: boolean = false;
@@ -25,13 +25,17 @@ export class ContactService {
 
   sendForm(form: any) {
     this.http.post(this.endpoint, form.value).subscribe(
-      (response) => this.handleResponse(response, form),
-      (error) => this.handleError(error, form)
+      (response) => {
+        this.handleResponse(response, form);
+      },
+      (error) => {
+        this.handleError(error, form);
+      }
     );
   }
 
   handleResponse(response: any, form: any) {
-    this.submitReportDialogOpen()
+    this.submitReportDialogOpen();
     console.log(response);
     this.submitReport =
       'Thank up for your Contact. I will replay as soon as possible!';
@@ -40,7 +44,7 @@ export class ContactService {
   }
 
   handleError(error: any, form: any) {
-    this.submitReportDialogOpen()
+    this.submitReportDialogOpen();
     this.errorMessage = true;
     console.log(error);
     this.submitReport =
@@ -57,6 +61,6 @@ export class ContactService {
   }
 
   submitReportDialogOpen() {
-    this.dialog.open(DialogSubmitReportComponent)
+    this.dialog.open(DialogSubmitReportComponent);
   }
 }
