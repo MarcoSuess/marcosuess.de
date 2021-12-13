@@ -38,7 +38,7 @@ export class ContactService {
     this.submitReportDialogOpen();
     console.log(response);
     this.submitReport =
-      'Thank up for your Contact. I will replay as soon as possible!';
+      'Thank up for your Contact. I will reply as soon as possible!';
     this.submitComplete = true;
     form.reset();
   }

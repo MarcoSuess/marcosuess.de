@@ -9,12 +9,12 @@ export class AboutSectionComponent implements OnInit {
   stories = [
     {
       title: 'Start in the Passion',
-      description: 'after completing my training, i was able to develop my own system with excel and have found that i am very happy when others benefit from it.',
+      description: 'After my training, I was allowed to develop my own storage system with Excel and found out that it makes me very happy when others benefit from it.',
       icon: 'assets/story_icons/walk-line.png',
     },
     {
       title: 'My journey of development',
-      description: 'I started with C++ Udemy courses, but I noticed that it hadn t brought me any further. In 2021 I decided to go to the Developer Academy and was able to develop my entire passion through it.',
+      description: 'My first line of code started with a C++ Udemy course, in 2021 I decided to attend the Developer Academy and was able to develop my passion.',
       icon: 'assets/story_icons/heart-line.png',
     },
     {
@@ -24,7 +24,7 @@ export class AboutSectionComponent implements OnInit {
     },
     {
       title: 'The next Challenge',
-      description: 'Im looking forward to contribute my knowledge of Javascript and Angular to your next project.',
+      description: 'Im looking forward to contributing my knowledge of JavaScript and Angular to your next project.',
       icon: 'assets/story_icons/flight-takeoff-line.png',
     },
   ];
