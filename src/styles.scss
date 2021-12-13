@@ -93,7 +93,7 @@ body {
 .overflow-container {
   overflow-y: auto;
   height: 64vh;
-  width: fit-content;
+  word-break: break-word;
 
   p {
     color: black;

@@ -10,14 +10,16 @@
   <div class="main-project-container scroll">
     <div class="links-container">
       <h2>My Works</h2>
-      <button
-        [class.active]="title.active"
-        (click)="projectService.assort(title.name)"
-        *ngFor="let title of projectService.titles; let i = index"
-        class="link-box"
-      >
-        {{ title.name }}
-      </button>
+      <div class="btn-container">
+        <button
+          [class.active]="title.active"
+          (click)="projectService.assort(title.name)"
+          *ngFor="let title of projectService.titles; let i = index"
+          class="link-box"
+        >
+          {{ title.name }}
+        </button>
+      </div>
     </div>
     <div id="section-Portfolio" class="work-section bg-1">
       <app-work-section></app-work-section>
