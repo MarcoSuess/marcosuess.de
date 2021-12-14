@@ -14,7 +14,6 @@
     background-color: #fa2759;
   }
 
-
   @media screen and (max-height: 700px) {
     display: none !important;
   }
@@ -22,8 +21,6 @@
   @media screen and (max-width: 1000px) {
     display: none !important;
   }
-  
-  
 }
 .bottom {
   position: absolute;
@@ -33,7 +30,6 @@
   justify-content: center;
   bottom: 50px;
   cursor: pointer;
-  
 }
 
 .welcome-container {
@@ -44,6 +40,9 @@
   @media screen and (max-width: 1000px) {
     align-items: center;
     flex-direction: column-reverse;
+  }
+
+  @media screen and (max-width: 700px) {
     margin-top: 80px;
   }
 }
