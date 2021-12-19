@@ -1,26 +1,16 @@
-
-
-
-
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 70vw;
 
-
   @media screen and (max-width: 1250px) {
     width: 95vw;
-
   }
 
   @media screen and (max-width: 700px) {
     min-height: 100vh;
-
   }
-
-
- 
 }
 
 .preview-box {
@@ -30,6 +20,8 @@
   background-size: cover;
   background-position: center;
   border-radius: 2px;
+  animation: 325ms zoomOut ease-in-out;
+
   @media screen and (max-width: 400px) {
     height: 32vh;
     width: 90vw;
@@ -39,12 +31,17 @@
     height: 260px;
     width: 300px;
   }
-
-
-
- 
 }
 
+@keyframes zoomOut {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
 
 .description {
   position: relative;
@@ -88,7 +85,7 @@
     color: #fb426e;
     text-decoration: none;
     transition: all 225ms ease-in-out;
-    font-family: 'Roboto' !important;
+    font-family: "Roboto" !important;
     &:hover {
       background-color: #fa2759;
       color: white;
@@ -105,19 +102,12 @@
   }
 }
 
-
 .jsdoc {
   position: absolute;
   right: 4px;
   bottom: 0;
- 
- 
-    margin-bottom: 4px;
-    border-radius: 8px 0px 8px !important;
-    padding: 4px 4px !important;
-  
+
+  margin-bottom: 4px;
+  border-radius: 8px 0px 8px !important;
+  padding: 4px 4px !important;
 }
-
-
-
-

@@ -12,21 +12,25 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: all 225ms ease-in-out;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  margin-bottom: 32px;
 
   &:hover {
     background-color: #2dfcd8;
     color: white;
   }
 
-  @media screen and (max-width: 700px) {
-    margin-top: 16px;
-    width: 50vw;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
   }
 
+  @media screen and (max-width: 850px) {
+    margin-top: 16px;
+  }
 
   @media screen and (max-height: 720px) {
     margin-bottom: 32px !important;
   }
+
   
 }

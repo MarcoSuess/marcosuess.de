@@ -14,7 +14,7 @@
     background-color: #fa2759;
   }
 
-  @media screen and (max-height: 700px) {
+  @media screen and (max-height: 800px) {
     display: none !important;
   }
 
@@ -56,4 +56,11 @@
   @media screen and (max-width: 1000px) {
     align-items: center;
   }
+}
+
+
+app-home-contact  {
+  @media screen and (max-width: 1000px) {
+    width: 100%
+}
 }

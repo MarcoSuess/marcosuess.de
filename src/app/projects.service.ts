@@ -12,7 +12,7 @@ export class ProjectsService {
       showDescription: false,
       image: 'assets/project-images/ringoffire.png',
       jsDocUrl: 'compodoc/ringoffire-doc/index.html',
-      projectUrl: 'https://ring-of-fire-44c7a.web.app'
+      projectUrl: 'https://ring-of-fire-44c7a.web.app',
     },
     {
       name: 'Sharkie',
@@ -22,7 +22,7 @@ export class ProjectsService {
       showDescription: false,
       image: 'assets/project-images/sharkie.png',
       jsDocUrl: 'http://marcosuess.net/Sharkie/out/',
-      projectUrl: 'http://marcosuess.net/Sharkie/'
+      projectUrl: 'http://marcosuess.net/Sharkie/',
     },
     {
       name: 'Wichtel-App',
@@ -31,7 +31,7 @@ export class ProjectsService {
       showDescription: false,
       image: 'assets/project-images/wichtel-app.png',
       jsDocUrl: 'compodoc/wichtelapp-doc/index.html',
-      projectUrl: 'https://wichteln-acefa.web.app/sign-in'
+      projectUrl: 'https://wichteln-acefa.web.app/sign-in',
     },
     {
       name: 'Slack Clone',
@@ -40,7 +40,7 @@ export class ProjectsService {
       showDescription: false,
       image: 'assets/project-images/slack-clone.jpg',
       jsDocUrl: 'compodoc/slack-doc/index.html',
-      projectUrl: 'https://slack-55c68.web.app/sign-in'
+      projectUrl: 'https://slack-55c68.web.app/sign-in',
     },
   ];
 
