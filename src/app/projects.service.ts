@@ -59,7 +59,8 @@ export class ProjectsService {
     },
   ];
 
-  showProjects: any;
+  showProjects: any = [];
+  zoomAnimation: boolean = false;
 
   constructor() {}
 
@@ -77,13 +78,21 @@ export class ProjectsService {
   }
 
   filterCategory(title: string) {
-    this.showProjects = this.projects.filter(
+    this.zoomAnimation = true;
+    let filterProjects = this.projects.filter(
       (project) => project.category == title
     );
 
-    if (this.showProjects.length == 0) {
+    this.showProjects = filterProjects;
+
+    if (filterProjects.length == 0) {
+      console.log(this.projects);
+
       this.showProjects = this.projects;
     }
-    console.log(this.showProjects);
+    setTimeout(() => {
+      this.zoomAnimation = false;
+    }, 324);
+  
   }
 }

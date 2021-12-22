@@ -1,5 +1,5 @@
 <header class="scroll">
- <img class="logo" src="assets/ms-logo.png">
+  <img class="logo" src="assets/ms-logo.png" />
 
   <div class="desk">
     <a (click)="anchorScroll.scrollTo('section-Home')">HOME</a>
@@ -9,9 +9,9 @@
 
   <mat-drawer-container class="example-container mobile" autosize>
     <mat-drawer
-    [ngStyle]="{
-      'display': drawer.opened ? 'block' : 'none'
-    }"
+      [ngStyle]="{
+        display: drawer.opened ? 'block' : 'none'
+      }"
       position="end"
       #drawer
       class="example-sidenav"

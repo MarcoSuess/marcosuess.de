@@ -15,8 +15,10 @@ body {
   }
 }
 
-h2,h3,p {
-  font-family: 'Roboto' !important;
+h2,
+h3,
+p {
+  font-family: "Roboto" !important;
 }
 
 .primary-color {
@@ -63,7 +65,7 @@ p {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     position: relative;
   }
@@ -98,14 +100,25 @@ body {
   p {
     color: black;
     text-align: start;
-  }e
+  }
 
   h2 {
-    font-size: 1.5em !important;
+    font-size: revert !important;
     line-height: 40px !important;
   }
-}
 
+  h3 {
+    color: black;
+    text-align: start;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
 h2 {
   font-style: normal !important;
   font-weight: 500 !important;

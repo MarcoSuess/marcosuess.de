@@ -17,4 +17,6 @@ export class AppComponent implements OnInit {
       this.projectService.showProjects = this.projectService.projects;
     
   }
+
+
 }
