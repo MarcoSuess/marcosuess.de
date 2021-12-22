@@ -15,10 +15,17 @@ export class FooterSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * Open the dialog : Legal Notice.
+   */
   openDialogLegalNotice() {
     this.matDialog.open(DialogLegalNoticeComponent)
   }
 
+
+  /**
+   * Open the dialog : Data Protection.
+   */
   openDialogDataProtection() {
     this.matDialog.open(DialogDataProtectionComponent)
   }

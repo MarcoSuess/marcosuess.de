@@ -64,6 +64,10 @@ export class ProjectsService {
 
   constructor() {}
 
+  /**
+   * This function check the current title.
+   * @param {string} title
+   */
   assort(title: string) {
     for (let i = 0; i < this.titles.length; i++) {
       let category = this.titles[i].name;
@@ -77,6 +81,10 @@ export class ProjectsService {
     }
   }
 
+  /**
+   * Filter the Projects
+   * @param {string} title
+   */
   filterCategory(title: string) {
     this.zoomAnimation = true;
     let filterProjects = this.projects.filter(
@@ -93,6 +101,5 @@ export class ProjectsService {
     setTimeout(() => {
       this.zoomAnimation = false;
     }, 324);
-  
   }
 }

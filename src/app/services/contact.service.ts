@@ -15,15 +15,22 @@ export class ContactService {
 
   constructor(private http: HttpClient, private dialog: MatDialog) {}
 
+  /**
+   * This function check the Form.
+   * @param {NgForm} myForm
+   */
   public onSubmit(myForm: NgForm) {
-    console.log(myForm.value);
-
     if (myForm.valid) {
       this.sendForm(myForm);
     }
   }
 
-  sendForm(form: any) {
+
+  /**
+   * Send the Form.
+   * @param {NgForm} form 
+   */
+  sendForm(form: NgForm) {
     this.http.post(this.endpoint, form.value).subscribe(
       (response) => {
         this.handleResponse(response, form);
@@ -34,16 +41,27 @@ export class ContactService {
     );
   }
 
-  handleResponse(response: any, form: any) {
+  /**
+   * This function handle the Response.
+   * @param {any} response 
+   * @param {NgForm} form 
+   */
+  handleResponse(response: any, form: NgForm) {
     this.submitReportDialogOpen();
     console.log(response);
     this.submitReport =
       'Thank up for your Contact. I will reply as soon as possible!';
     this.submitComplete = true;
     form.reset();
-  }
+  } 
 
-  handleError(error: any, form: any) {
+
+  /**
+   * This function handle the Error.
+   * @param {string} error 
+   * @param {NgForm} form 
+   */
+  handleError(error: string, form: NgForm) {
     this.submitReportDialogOpen();
     this.errorMessage = true;
     console.log(error);
@@ -53,6 +71,10 @@ export class ContactService {
     form.reset();
   }
 
+
+  /**
+   * This function close The dialog and reset the Form.
+   */
   public closeCard() {
     this.errorMessage = false;
     this.submitComplete = false;
@@ -60,6 +82,9 @@ export class ContactService {
     this.submitReport = '';
   }
 
+  /**
+   * open the submit report component.
+   */
   submitReportDialogOpen() {
     this.dialog.open(DialogSubmitReportComponent);
   }
